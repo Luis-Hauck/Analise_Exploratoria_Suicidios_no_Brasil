@@ -36,18 +36,20 @@
 Durante a análise exploratória dos dados, foram identificados os seguintes problemas:
 
 * **Valores ausentes:** A coluna "HDI for year" possui 30% de valores ausentes.
-* **Valores inconsistentes:** A coluna "gênero" apresenta alguns valores inválidos, como "masculino ", "Homem" e "femenino".
-* **Dados duplicados:** Foram encontrados 2% de linhas duplicadas no conjunto de dados.
+* **Valores inconsistentes:** A coluna "suicides_no" apresenta alguns valores inconsistentes:
+   * A falta de vários países, principalmente do continente africano;
+   * Uma queda brusca no número de suicídios em 2016;
+   * Uma alta brusca proxíma do ano de 1990.
+
 
 **Impacto dos problemas:**
 
-Os valores ausentes na coluna "idade" podem afetar a análise da distribuição de idade dos participantes. Os valores inconsistentes na coluna "gênero" podem dificultar a análise por gênero. Os dados duplicados podem levar a conclusões errôneas sobre a frequência de certos eventos.
+>Os valores ausentes impactaram bastante em nossa análise, e também os possíveis outliers presentes em 1989/2016 distorecem nossa análise, entretanto como meu objetivo era a exploração não teve tantos impactos, mas para algo mais consolidado seria necessario um conjunto de dados melhor.
 
 **Soluções adotadas:**
 
 * **Valores ausentes:** As linhas com valores ausentes na coluna "HDI for year" foram mantidas por não causar grande impacto na análise.
-* **Valores inconsistentes:** Retirada dos valores  .
-* **Dados duplicados:** As linhas duplicadas foram removidas.
+* **Valores inconsistentes:** Retirada dos valores referente ao ano de 2016.
 
 ## Ferramentas Utilizadas
 **Lista das ferramentas utilizadas na análise:**
@@ -55,7 +57,7 @@ Os valores ausentes na coluna "idade" podem afetar a análise da distribuição 
 * Linguagem de programação: [Python]
 * Bibliotecas: [Pandas,Matplotlib, Seaborn]
 
-  ## Etapas da Análise
+## Etapas da Análise
 
 **Descrição das etapas realizadas na análise exploratória:**
 
@@ -70,4 +72,31 @@ Os valores ausentes na coluna "idade" podem afetar a análise da distribuição 
 4. **Visualização de Dados:**
     * Criação de gráficos e dashboards para comunicar os insights descobertos.
   
-  
+## Resultados
+
+**Resumo dos principais insights e padrões encontrados na análise:**
+
+>Como mencionado podemos perceber uma alta brusca próxima de 1990, além de uma alta queda em 2016, não sendo possível saber se é uma falta de dados ou uma queda no número de suicídios
+
+![image](https://github.com/user-attachments/assets/3cfde3dc-2b8c-44c3-9606-8e47edfa6f04)
+
+>Um ponto intressante que alguns países como a Rússía iniciaram seus números em 1989 o que também ocasiona essa elevação:
+
+![image](https://github.com/user-attachments/assets/e284ac15-6e5a-41e3-b3a5-05c5f5c274f5)
+
+>Etraindo algumas informações do Brasil podemos perceber que o maior número de suicídios ocorre entre homens:
+
+![image](https://github.com/user-attachments/assets/dd932fad-594a-44a6-8405-d90dc85620eb)
+
+>Além disso podemos análisar que o amior índice de duicídio está localizado em pessoas de 34-54 anos no Brasil nesse período.
+
+![image](https://github.com/user-attachments/assets/cda28ab6-7c8d-48ec-9890-91f2325b70f1)
+
+As demais análises e comentários podem ser encontrados no notebook ;)
+
+
+
+
+
+
+
