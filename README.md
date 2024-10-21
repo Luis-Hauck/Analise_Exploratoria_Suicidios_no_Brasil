@@ -94,7 +94,16 @@ Durante a análise exploratória dos dados, foram identificados os seguintes pro
 
 As demais análises e comentários podem ser encontrados no notebook ;)
 
+## Conclusões
 
+**Conclusões e próximos passos a partir da análise exploratória:**
+
+>Podemos concluir que para o fim de estudos práticos, está análise se saiu bem, entretanto é possivel perceber a falta de informações, ou seja para fins de pesquisas não é a melhor opção, seria necessário um conjunto de dados mais solido.
+
+## Autor
+
+* Luis Gustavo Hauck
+* [Linkedin](https://www.linkedin.com/in/luis-gustavo-hauck/)
 
 
 
